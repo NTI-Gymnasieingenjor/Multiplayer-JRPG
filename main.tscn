@@ -1,10 +1,17 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://scenes/enemy.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scenes/background.tscn" type="PackedScene" id=3]
+[ext_resource path="res://resources/characters/king/king.tscn" type="PackedScene" id=1]
+[ext_resource path="res://resources/characters/archer/archer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://resources/backgrounds/simple_bg.tscn" type="PackedScene" id=3]
+[ext_resource path="res://resources/ui/battle_ui/battle_ui.tscn" type="PackedScene" id=4]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="BattleUI" parent="." instance=ExtResource( 4 )]
+margin_left = 70.0
+margin_top = 87.0
+margin_right = 123.0
+margin_bottom = 107.0
 
 [node name="ParallaxBackground" parent="." instance=ExtResource( 3 )]
 
@@ -13,4 +20,4 @@ position = Vector2( 224, 116 )
 scale = Vector2( -2, 2 )
 
 [node name="Archer" parent="." instance=ExtResource( 2 )]
-position = Vector2( 96, 140 )
+position = Vector2( 96, 137 )
