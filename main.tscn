@@ -17,7 +17,7 @@ margin_bottom = 107.0
 
 [node name="King" parent="." instance=ExtResource( 1 )]
 position = Vector2( 224, 116 )
-scale = Vector2( -2, 2 )
+scale = Vector2( 2, 2 )
 
 [node name="Archer" parent="." instance=ExtResource( 2 )]
 position = Vector2( 96, 137 )

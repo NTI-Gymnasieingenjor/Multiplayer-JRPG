@@ -14,4 +14,3 @@ func handleattack():
 	arrow.position.y -= 4
 	arrow.position.x += 15
 	arrow.rotation_degrees = -10
-
