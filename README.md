@@ -30,4 +30,4 @@
 
 ## Programming Languages
 
-- C++
+- GDScript

@@ -15,3 +15,9 @@
     - Quality
         - 2d
             - Use Pixel Snap: On
+
+# Godot Plugins
+
+- GUT (Unit Testing)
+- Asesprite Wizard (Importing animations directly from Asesprite)
+- GitHub Integration (Managing GitHub from Godot)

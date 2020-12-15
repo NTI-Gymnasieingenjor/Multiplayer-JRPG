@@ -5,6 +5,8 @@
 .import/
 export.cfg
 export_presets.cfg
+addons/
+.github/
 
 # Mono-specific ignores
 .mono/
