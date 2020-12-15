@@ -4,7 +4,6 @@
 
 - All team members should **understand the code** and be capable to make changes to it.
 - Complex code should be **commented**.
-- **Docstrings** should be used to explain functions.
 - **Automated tests** should be written for each feature if applicable.
 - Proper **documentation** should be written if necessary.
 
