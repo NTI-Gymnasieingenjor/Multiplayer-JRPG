@@ -31,6 +31,10 @@ window/size/height=180
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 
+[editor_plugins]
+
+enabled=PoolStringArray( "gut" )
+
 [gdnative]
 
 singletons=[ "res://git_api.gdnlib" ]

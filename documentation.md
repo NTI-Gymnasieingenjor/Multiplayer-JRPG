@@ -15,3 +15,7 @@
     - Quality
         - 2d
             - Use Pixel Snap: On
+
+# Godot Plugins
+
+- GUT (Unit Testing)
