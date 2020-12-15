@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/archer.png-1cc187e04a5b9a5c3679c3d2a1b29c7a.stex"
+path="res://.import/simple_bg.png-09baf89165f73314c9085f71af204ae3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/archer.png"
-dest_files=[ "res://.import/archer.png-1cc187e04a5b9a5c3679c3d2a1b29c7a.stex" ]
+source_file="res://resources/backgrounds/simple_bg.png"
+dest_files=[ "res://.import/simple_bg.png-09baf89165f73314c9085f71af204ae3.stex" ]
 
 [params]
 

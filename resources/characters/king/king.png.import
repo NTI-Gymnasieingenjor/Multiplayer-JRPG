@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bg.png-24bff804693ee063127ad100e04c5185.stex"
+path="res://.import/king.png-296529cf64bf5c8eb8182d78c14d9888.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://bg.png"
-dest_files=[ "res://.import/bg.png-24bff804693ee063127ad100e04c5185.stex" ]
+source_file="res://resources/characters/king/king.png"
+dest_files=[ "res://.import/king.png-296529cf64bf5c8eb8182d78c14d9888.stex" ]
 
 [params]
 
