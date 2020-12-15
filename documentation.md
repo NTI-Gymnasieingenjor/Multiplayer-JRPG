@@ -19,5 +19,3 @@
 # Godot Plugins
 
 - GUT (Unit Testing)
-- Asesprite Wizard (Importing animations directly from Asesprite)
-- GitHub Integration (Managing GitHub from Godot)
