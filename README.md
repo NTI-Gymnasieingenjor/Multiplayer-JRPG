@@ -20,8 +20,8 @@
 
 ## Coding Conventions
 
-- **Spaces:** 4
-- **Comments:** English, space between comment symbol and comment, first letter capitalized.
+- **Spaces:** Tabs, not spaces. 
+- **Comments:** English, first letter capitalized. Comment symbol (#) at the beginning of the line, but the comment itself indented the same way as surrounding code.
 - **End of Line Sequence:** LF
 
 ## Development Environment
