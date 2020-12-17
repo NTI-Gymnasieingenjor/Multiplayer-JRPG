@@ -12,4 +12,8 @@ func show_value(value, duration):
 			Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 	$Tween.start()
 	yield($Tween, "tween_all_completed")
+	
+#	TEMPORARY BATTLE LOOP SOLUTION
+	get_parent().get_parent().get_parent().get_node("BattleUI").show()
+	
 	queue_free()
