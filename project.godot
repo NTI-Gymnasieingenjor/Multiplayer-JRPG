@@ -8,21 +8,15 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "",
-"class": "GitAPI",
-"language": "NativeScript",
-"path": "res://git_api.gdns"
-} ]
+_global_script_classes=[  ]
 _global_script_class_icons={
-"GitAPI": ""
+
 }
 
 [application]
 
 config/name="Multiplayer JRPG"
 run/main_scene="res://main.tscn"
-boot_splash/fullsize=false
 config/icon="res://icon.png"
 
 [display]
@@ -34,7 +28,7 @@ window/stretch/aspect="keep"
 
 [gdnative]
 
-singletons=[ "res://git_api.gdnlib" ]
+singletons=[  ]
 
 [rendering]
 
