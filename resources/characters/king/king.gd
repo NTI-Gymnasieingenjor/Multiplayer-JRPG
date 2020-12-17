@@ -10,4 +10,6 @@ func _ready():
 var rng = RandomNumberGenerator.new()
 func handleattack():
 	rng.randomize()
+	# Currently only waits specific time, should wait until players attack animation is finished, and/or interact with it.
+	yield(get_tree().create_timer(0.4), "timeout")
 	$DamageManager.show_value(rng.randi_range(10, 100))

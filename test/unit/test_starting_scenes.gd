@@ -16,11 +16,14 @@ class TestStartingNodesPresent:
 	
 	
 	func before_each():
-		mainscene = load("res://main.tscn").instance()
+		mainscene = load("res://resources/main.tscn").instance()
 	
 	
 	func test_archer_present():
-		custom_assert_present("Archer")
+		if mainscene.get_node("TurnQueue").get_node("Archer").is_visible():
+			_pass("Archer is present in starting scene.")
+		else:
+			_fail("Archer is not present in starting scene.")
 	
 	
 	func test_king_present():

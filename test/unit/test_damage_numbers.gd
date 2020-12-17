@@ -5,7 +5,7 @@ var mainscene
 
 
 func before_each():
-	mainscene = load("res://main.tscn").instance()
+	mainscene = load("res://resources/main.tscn").instance()
 	king = mainscene.get_node("King")
 
 

@@ -11,6 +11,10 @@ func _ready():
 
 func handleattack():
 #	Runs when BattleUI emits the "attack" signal.
+	play_turn()
+
+
+func play_turn():
 	var arrow = Arrow.instance()
 	add_child(arrow)
 	arrow.position.y -= 4
