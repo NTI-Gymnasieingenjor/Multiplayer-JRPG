@@ -2,10 +2,12 @@ extends Area2D
 
 
 func _ready():
-	pass
+#	Connects BattleUI's attack signal to a function in this script.
+	var BattleUI = get_tree().get_root().find_node("BattleUI", true, false)
+	BattleUI.connect("attack", self, "handleattack")
 
 
 var rng = RandomNumberGenerator.new()
-func _on_King_area_shape_entered(_area_id, _area, _area_shape, _self_shape):
+func handleattack():
 	rng.randomize()
 	$DamageManager.show_value(rng.randi_range(10, 100))
