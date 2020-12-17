@@ -8,7 +8,7 @@
 
 [node name="Node2D" type="Node2D"]
 
-[node name="TurnQueue" type="YSort" parent="."]
+[node name="TurnQueue" type="Node2D" parent="."]
 script = ExtResource( 5 )
 
 [node name="Archer" parent="TurnQueue" instance=ExtResource( 1 )]

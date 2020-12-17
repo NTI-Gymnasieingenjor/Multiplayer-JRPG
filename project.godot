@@ -9,7 +9,7 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "YSort",
+"base": "Node2D",
 "class": "TurnQueue",
 "language": "GDScript",
 "path": "res://resources/turn_queue.gd"

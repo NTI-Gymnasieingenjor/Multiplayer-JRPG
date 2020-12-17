@@ -1,4 +1,4 @@
-extends YSort
+extends Node2D
 
 class_name TurnQueue
 
