@@ -18,4 +18,4 @@
 
 # Godot Plugins
 
-- GUT (Unit Testing)
+- Gut 7.0.0 (Unit Testing)
