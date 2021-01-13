@@ -19,3 +19,4 @@
 # Godot Plugins
 
 - Gut 7.0.0 (Unit Testing)
+- Godot SQLite 2.0 (Databases)
