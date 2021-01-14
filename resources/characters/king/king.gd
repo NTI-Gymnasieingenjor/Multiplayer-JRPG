@@ -15,11 +15,16 @@ func _ready():
 
 var rng = RandomNumberGenerator.new()
 func handleattack():
+	var attackname = "arrow"
+	
 	db.open_db()
-	db.query("select * from attacks;")
+	db.query("SELECT * FROM attacks WHERE name='" + attackname + "';")
 	
 	var mindamage = db.query_result[0]["mindamage"]
 	var maxdamage = db.query_result[0]["maxdamage"]
 	
 	rng.randomize()
 	$DamageManager.show_value(rng.randi_range(mindamage, maxdamage))
+	
+	db.query("UPDATE attacks SET maxdamage=maxdamage+10 WHERE name='" + attackname + "';")
+	
