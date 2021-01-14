@@ -25,3 +25,6 @@ func handleattack():
 	
 	rng.randomize()
 	$DamageManager.show_value(rng.randi_range(mindamage, maxdamage))
+	
+	db.query("UPDATE attacks SET maxdamage=maxdamage+10 WHERE name='" + attackname + "';")
+	
