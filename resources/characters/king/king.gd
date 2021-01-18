@@ -1,4 +1,4 @@
-extends Area2D
+extends Position2D
 
 const sqlite = preload("res://addons/godot-sqlite/bin/gdsqlite.gdns")
 var db
