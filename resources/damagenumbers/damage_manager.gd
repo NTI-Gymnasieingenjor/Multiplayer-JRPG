@@ -2,7 +2,7 @@ extends Node2D
 
 var Damage = preload("res://resources/damagenumbers/damage_numbers.tscn")
 
-export var duration = 1
+export var duration = 0.75
 
 
 func _ready():
