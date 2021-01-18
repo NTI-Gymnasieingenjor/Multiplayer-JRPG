@@ -20,5 +20,3 @@
 
 - Gut 7.0.0 (Unit Testing)
 - Godot SQLite 2.0 (Databases)
-
-### [Click here for more documentation!](https://github.com/NTI-Gymnasieingenjor/Multiplayer-JRPG/blob/main/documentation.md)
