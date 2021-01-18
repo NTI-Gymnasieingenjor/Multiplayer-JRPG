@@ -24,7 +24,10 @@ func handleattack():
 	var maxdamage = db.query_result[0]["maxdamage"]
 	
 	rng.randomize()
+
+	# Currently only waits specific time, should wait until players attack animation is finished, and/or interact with it.
+	yield(get_tree().create_timer(0.4), "timeout")
+
 	$DamageManager.show_value(rng.randi_range(mindamage, maxdamage))
 	
 	db.query("UPDATE attacks SET maxdamage=maxdamage+10 WHERE name='" + attackname + "';")
-	

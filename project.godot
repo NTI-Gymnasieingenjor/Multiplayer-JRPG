@@ -8,15 +8,20 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "TurnQueue",
+"language": "GDScript",
+"path": "res://resources/turn_queue.gd"
+} ]
 _global_script_class_icons={
-
+"TurnQueue": ""
 }
 
 [application]
 
 config/name="Multiplayer JRPG"
-run/main_scene="res://main.tscn"
+run/main_scene="res://resources/main.tscn"
 config/icon="res://icon.png"
 
 [display]
