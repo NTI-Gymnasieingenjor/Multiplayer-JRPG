@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/arrow.png-aeef08c4c14d29dbe1bda618376cd6f3.stex"
+path="res://.import/spr_ArcherIdle_strip_NoBkg.png-87486f60b3d14c5a886ed22787aa47b8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/arrow/arrow.png"
-dest_files=[ "res://.import/arrow.png-aeef08c4c14d29dbe1bda618376cd6f3.stex" ]
+source_file="res://resources/characters/archer/spr_ArcherIdle_strip_NoBkg.png"
+dest_files=[ "res://.import/spr_ArcherIdle_strip_NoBkg.png-87486f60b3d14c5a886ed22787aa47b8.stex" ]
 
 [params]
 
