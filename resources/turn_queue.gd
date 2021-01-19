@@ -9,8 +9,7 @@ func _ready():
 	
 func play_turn():
 	active_character.play_turn()
-#	Currently only yields for specific time, should yield until active characters turn is completed.
-	yield(get_tree().create_timer(0.5), "timeout")
+	yield(active_character.get_node("AnimatedSprite"), "animation_finished")
 	var new_index : int = (active_character.get_index() + 1) % get_child_count()
 	active_character = get_child(new_index)
-	get_parent().get_node("BattleUI").show()
+	get_tree().get_root().find_node("BattleUI", true, false).show()

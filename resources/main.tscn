@@ -22,9 +22,9 @@ position = Vector2( 224, 116 )
 scale = Vector2( 2, 2 )
 
 [node name="BattleUI" parent="." instance=ExtResource( 4 )]
-margin_left = 70.0
-margin_top = 87.0
-margin_right = 123.0
-margin_bottom = 107.0
+margin_left = 26.0
+margin_top = 61.0
+margin_right = 79.0
+margin_bottom = 81.0
 
 [node name="ParallaxBackground" parent="." instance=ExtResource( 3 )]
