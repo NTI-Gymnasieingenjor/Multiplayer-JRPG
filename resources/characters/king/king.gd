@@ -15,7 +15,9 @@ func _ready():
 
 var rng = RandomNumberGenerator.new()
 func handleattack():
-	var attackname = "arrow"
+	var active_character = get_tree().get_root().find_node("TurnQueue", true, false).get("active_character")
+	
+	var attackname = active_character.get("attack")
 	
 	db.open_db()
 	db.query("SELECT * FROM attacks WHERE name='" + attackname + "';")
@@ -23,7 +25,6 @@ func handleattack():
 	var mindamage = db.query_result[0]["mindamage"]
 	var maxdamage = db.query_result[0]["maxdamage"]
 	
-	var active_character = get_tree().get_root().find_node("TurnQueue", true, false).get("active_character")
 	yield(active_character.get_node("AnimatedSprite"), "animation_finished")
 
 	rng.randomize()
