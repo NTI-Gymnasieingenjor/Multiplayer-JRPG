@@ -1,4 +1,4 @@
-extends Area2D
+extends Position2D
 
 const sqlite = preload("res://addons/godot-sqlite/bin/gdsqlite.gdns")
 var db
@@ -23,11 +23,9 @@ func handleattack():
 	var mindamage = db.query_result[0]["mindamage"]
 	var maxdamage = db.query_result[0]["maxdamage"]
 	
+	var active_character = get_tree().get_root().find_node("TurnQueue", true, false).get("active_character")
+	yield(active_character.get_node("AnimatedSprite"), "animation_finished")
+
 	rng.randomize()
-
-	# Currently only waits specific time, should wait until players attack animation is finished, and/or interact with it.
-	yield(get_tree().create_timer(0.4), "timeout")
-
-	$DamageManager.show_value(rng.randi_range(mindamage, maxdamage))
 	
-	db.query("UPDATE attacks SET maxdamage=maxdamage+10 WHERE name='" + attackname + "';")
+	$DamageManager.show_value(rng.randi_range(mindamage, maxdamage))

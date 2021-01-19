@@ -1,7 +1,4 @@
-extends Area2D
-
-export (PackedScene) var Arrow
-
+extends Position2D
 
 func _ready():
 #	Connects BattleUI's attack signal to a function in this script.
@@ -11,12 +8,10 @@ func _ready():
 
 func handleattack():
 #	Runs when BattleUI emits the "attack" signal.
-	play_turn()
+	pass
 
 
 func play_turn():
-	var arrow = Arrow.instance()
-	add_child(arrow)
-	arrow.position.y -= 4
-	arrow.position.x += 15
-	arrow.rotation_degrees = -10
+	$AnimatedSprite.play("Attack")
+	yield(get_node("AnimatedSprite"), "animation_finished")
+	$AnimatedSprite.play("Idle")
