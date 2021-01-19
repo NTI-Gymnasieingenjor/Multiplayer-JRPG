@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spr_ArcherMelee_strip_NoBkg.png-4920f26cc4c0d121f8e332b6c19abbd3.stex"
+path="res://.import/ArcherMelee.png-9696147d902d61b235acba7c1cc800e9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/characters/archer/spr_ArcherMelee_strip_NoBkg.png"
-dest_files=[ "res://.import/spr_ArcherMelee_strip_NoBkg.png-4920f26cc4c0d121f8e332b6c19abbd3.stex" ]
+source_file="res://resources/characters/archer/ArcherMelee.png"
+dest_files=[ "res://.import/ArcherMelee.png-9696147d902d61b235acba7c1cc800e9.stex" ]
 
 [params]
 
