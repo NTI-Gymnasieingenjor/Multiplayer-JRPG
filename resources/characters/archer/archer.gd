@@ -12,4 +12,4 @@ func handleattack():
 
 
 func play_turn():
-	pass
+	$AnimatedSprite.play("Attack")
