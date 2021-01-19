@@ -1,6 +1,6 @@
 extends Position2D
 
-var attack = "archermelee"
+var attack = "flamethrower"
 
 
 func _ready():
