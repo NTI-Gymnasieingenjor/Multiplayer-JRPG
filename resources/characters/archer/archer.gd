@@ -8,7 +8,7 @@ func _ready():
 
 func handleattack():
 #	Runs when BattleUI emits the "attack" signal.
-	play_turn()
+	pass
 
 
 func play_turn():
