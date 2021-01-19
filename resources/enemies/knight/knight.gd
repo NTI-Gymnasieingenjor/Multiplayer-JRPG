@@ -4,6 +4,8 @@ const sqlite = preload("res://addons/godot-sqlite/bin/gdsqlite.gdns")
 var db
 var db_name = "res://attacks.db"
 
+var attack = "knightsword"
+
 func _ready():
 	$AnimatedSprite.play("Idle")
 	
@@ -32,3 +34,9 @@ func handleattack():
 	rng.randomize()
 	
 	$DamageManager.show_value(rng.randi_range(mindamage, maxdamage))
+
+
+func play_turn():
+	$AnimatedSprite.play("Attack")
+	yield(get_node("AnimatedSprite"), "animation_finished")
+	$AnimatedSprite.play("Idle")

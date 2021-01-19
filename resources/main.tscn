@@ -18,9 +18,7 @@ position = Vector2( 80, 76 )
 [node name="Archer" parent="TurnQueue" instance=ExtResource( 1 )]
 position = Vector2( 90, 129 )
 
-[node name="Enemies" type="Node2D" parent="."]
-
-[node name="Knight" parent="Enemies" instance=ExtResource( 7 )]
+[node name="Knight" parent="TurnQueue" instance=ExtResource( 7 )]
 position = Vector2( 230, 85 )
 
 [node name="BattleUI" parent="." instance=ExtResource( 4 )]
