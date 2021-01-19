@@ -13,7 +13,4 @@ func show_value(value, duration):
 	$Tween.start()
 	yield($Tween, "tween_all_completed")
 	
-#	Temporary battle loop solution
-	get_parent().get_parent().get_parent().get_node("BattleUI").show()
-	
 	queue_free()
