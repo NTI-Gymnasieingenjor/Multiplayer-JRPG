@@ -13,7 +13,7 @@ func show_value(value):
 	var damage = Damage.instance()
 	add_child(damage)
 	
-#	Positions damage number above the sprite (SPRITE NODE MUST BE NAMED "AnimatedSprite"!)
+#	Positions damage number above the sprite
 	damage.rect_position.y -= ((get_parent().get_node("AnimatedSprite").frames.get_frame("Idle", 0).get_height() / 2) + (damage.rect_size[1] / 2))
 	
 	
