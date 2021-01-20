@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/boss_battle_#2_metal_loop.ogg-1e5f01e0e0158c81a58c11f9f7a9d2da.oggstr"
+
+[deps]
+
+source_file="res://resources/bgm/boss_battle/boss_battle_#2_metal_loop.ogg"
+dest_files=[ "res://.import/boss_battle_#2_metal_loop.ogg-1e5f01e0e0158c81a58c11f9f7a9d2da.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
