@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/knightsword.ogg-dc33f3cb3d4c6ef4ffcfa950ec7544b5.oggstr"
+
+[deps]
+
+source_file="res://resources/enemies/knight/knightsword.ogg"
+dest_files=[ "res://.import/knightsword.ogg-dc33f3cb3d4c6ef4ffcfa950ec7544b5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
