@@ -11,5 +11,5 @@ dest_files=[ "res://.import/boss_battle_#2_metal_opening.ogg-a8aab8b641f507eaeb7
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
