@@ -7,7 +7,6 @@ var db_name = "res://data.db"
 
 var is_enemy = true
 var attack = "knightsword"
-var enemyname = "knight"
 var hp
 
 var rng = RandomNumberGenerator.new()
@@ -19,9 +18,9 @@ func _ready():
 	db = sqlite.new()
 	db.path = db_name
 	
+#	Retrieves hp from database. 
 	db.open_db()
-	db.query("SELECT * FROM enemies WHERE name='" + enemyname + "';")
-	
+	db.query("SELECT * FROM enemies WHERE name='" + self.get_name().to_lower() + "';")
 	hp = db.query_result[0]["hp"]
 	
 #	Connects BattleUI's attack signal to a function in this script.
@@ -46,6 +45,7 @@ func take_damage():
 	var damage = rng.randi_range(mindamage, maxdamage)
 	hp -= damage
 	$DamageManager.show_value(damage)
+	
 	if hp <= 0:
 		queue_free()
 
