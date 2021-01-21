@@ -3,10 +3,11 @@ extends Position2D
 # Loads Godot SQLite plugin.
 const sqlite = preload("res://addons/godot-sqlite/bin/gdsqlite.gdns")
 var db
-var db_name = "res://attacks.db"
+var db_name = "res://data.db"
 
 var is_enemy = true
 var attack = "knightsword"
+var hp
 
 var rng = RandomNumberGenerator.new()
 
@@ -16,6 +17,11 @@ func _ready():
 #	Instances Godot SQLite
 	db = sqlite.new()
 	db.path = db_name
+	
+#	Retrieves hp from database. 
+	db.open_db()
+	db.query("SELECT * FROM enemies WHERE name='" + self.get_name().to_lower() + "';")
+	hp = db.query_result[0]["hp"]
 	
 #	Connects BattleUI's attack signal to a function in this script.
 	var BattleUI = get_tree().get_root().find_node("BattleUI", true, false)
@@ -36,7 +42,12 @@ func take_damage():
 	yield(active_character.get_node("AnimatedSprite"), "animation_finished")
 
 	rng.randomize()
-	$DamageManager.show_value(rng.randi_range(mindamage, maxdamage))
+	var damage = rng.randi_range(mindamage, maxdamage)
+	hp -= damage
+	$DamageManager.show_value(damage)
+	
+	if hp <= 0:
+		queue_free()
 
 
 func play_turn():
