@@ -2,7 +2,7 @@ extends Position2D
 
 const sqlite = preload("res://addons/godot-sqlite/bin/gdsqlite.gdns")
 var db
-var db_name = "res://attacks.db"
+var db_name = "res://data.db"
 
 func _ready():
 	db = sqlite.new()
