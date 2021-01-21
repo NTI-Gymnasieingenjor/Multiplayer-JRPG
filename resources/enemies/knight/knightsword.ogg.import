@@ -11,5 +11,5 @@ dest_files=[ "res://.import/knightsword.ogg-dc33f3cb3d4c6ef4ffcfa950ec7544b5.ogg
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
