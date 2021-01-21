@@ -2,7 +2,6 @@ extends Position2D
 
 var is_enemy = false
 var attack = "archermelee"
-var hp
 
 
 func _ready():
