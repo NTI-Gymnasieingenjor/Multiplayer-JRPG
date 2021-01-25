@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WizardMove.png-7d6a904868c2b3d4ac9c6b8914fe6e85.stex"
+path="res://.import/ArcherAttack.png-a699619bde1a440cbafdb20a75a46f3b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/characters/wizard/WizardMove.png"
-dest_files=[ "res://.import/WizardMove.png-7d6a904868c2b3d4ac9c6b8914fe6e85.stex" ]
+source_file="res://resources/players/archer/ArcherAttack.png"
+dest_files=[ "res://.import/ArcherAttack.png-a699619bde1a440cbafdb20a75a46f3b.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -30,5 +30,5 @@ process/HDR_as_SRGB=false
 process/invert_color=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

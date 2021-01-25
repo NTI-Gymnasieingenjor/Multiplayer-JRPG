@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/archer.png-afc60347ce73fa02b96a828e2901ac35.stex"
+path="res://.import/ArcherMelee.png-057bc56d8701e4116cabc9e2795346aa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/characters/archer/archer.png"
-dest_files=[ "res://.import/archer.png-afc60347ce73fa02b96a828e2901ac35.stex" ]
+source_file="res://resources/players/archer/ArcherMelee.png"
+dest_files=[ "res://.import/ArcherMelee.png-057bc56d8701e4116cabc9e2795346aa.stex" ]
 
 [params]
 

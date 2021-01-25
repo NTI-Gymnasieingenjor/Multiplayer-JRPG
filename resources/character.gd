@@ -1,7 +1,7 @@
-extends Position2D
+extends Node2D
 
-var is_enemy = false
 var attack
+
 
 func _ready():
 	$AnimatedSprite.play("Idle")

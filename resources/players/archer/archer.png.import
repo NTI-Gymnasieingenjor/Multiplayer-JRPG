@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WizardAttack.png-894f44cb082a653c3214370409e0baa6.stex"
+path="res://.import/archer.png-d5a6ed39f1be4b481449dcba47a4552f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/characters/wizard/WizardAttack.png"
-dest_files=[ "res://.import/WizardAttack.png-894f44cb082a653c3214370409e0baa6.stex" ]
+source_file="res://resources/players/archer/archer.png"
+dest_files=[ "res://.import/archer.png-d5a6ed39f1be4b481449dcba47a4552f.stex" ]
 
 [params]
 

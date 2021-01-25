@@ -1,8 +1,9 @@
 [gd_scene load_steps=41 format=2]
 
-[ext_resource path="res://resources/characters/archer/ArcherIdle.png" type="Texture" id=1]
-[ext_resource path="res://resources/characters/archer/archer.gd" type="Script" id=2]
-[ext_resource path="res://resources/characters/archer/ArcherMelee.png" type="Texture" id=3]
+[ext_resource path="res://resources/players/archer/ArcherIdle.png" type="Texture" id=1]
+[ext_resource path="res://resources/players/archer/archer.gd" type="Script" id=2]
+[ext_resource path="res://resources/players/archer/ArcherMelee.png" type="Texture" id=3]
+
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
