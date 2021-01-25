@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WizardMove.png-9ee554b8514f915591c566c863cd6c1a.stex"
+path="res://.import/ArcherRun.png-d6d0d32f86a2955ce2ec62b4e18f1b84.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/players/wizard/WizardMove.png"
-dest_files=[ "res://.import/WizardMove.png-9ee554b8514f915591c566c863cd6c1a.stex" ]
+source_file="res://resources/players/archer/ArcherRun.png"
+dest_files=[ "res://.import/ArcherRun.png-d6d0d32f86a2955ce2ec62b4e18f1b84.stex" ]
 
 [params]
 
