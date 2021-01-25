@@ -23,7 +23,7 @@ func battle_loop():
 				yield(battleui, "attack")
 		
 		active_character.play_turn()
-		yield(active_character.get_node("AnimatedSprite"), "animation_finished")
+		yield(active_character, "turn_finished")
 		
 		next_turn()
 

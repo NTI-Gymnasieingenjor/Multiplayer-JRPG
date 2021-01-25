@@ -1,3 +1,9 @@
 extends "res://resources/character.gd"
 
-var is_enemy = false
+
+func _ready():
+	is_enemy = false
+
+
+func take_damage():
+	pass

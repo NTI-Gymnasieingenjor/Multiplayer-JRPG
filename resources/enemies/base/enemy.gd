@@ -5,13 +5,14 @@ const sqlite = preload("res://addons/godot-sqlite/bin/gdsqlite.gdns")
 var db
 var db_name = "res://data.db"
 
-var is_enemy = true
-var hp
+var hp : int
 
 var rng = RandomNumberGenerator.new()
 
 
 func _ready():
+	is_enemy = true
+	
 #	Instances Godot SQLite
 	db = sqlite.new()
 	db.path = db_name
@@ -20,10 +21,6 @@ func _ready():
 	db.open_db()
 	db.query("SELECT * FROM enemies WHERE name='" + self.get_name().to_lower() + "';")
 	hp = db.query_result[0]["hp"]
-	
-#	Connects BattleUI's attack signal to a function in this script.
-	var BattleUI = get_tree().get_root().find_node("BattleUI", true, false)
-	BattleUI.connect("attack", self, "take_damage")
 
 
 func take_damage():
@@ -36,8 +33,6 @@ func take_damage():
 	db.query("SELECT * FROM attacks WHERE name='" + attackname + "';")
 	var mindamage = db.query_result[0]["mindamage"]
 	var maxdamage = db.query_result[0]["maxdamage"]
-	
-	yield(active_character.get_node("AnimatedSprite"), "animation_finished")
 	
 #	Takes damage and displays damage dealt above sprite.
 	rng.randomize()
