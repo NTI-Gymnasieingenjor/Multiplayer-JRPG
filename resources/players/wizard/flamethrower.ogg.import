@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/flamethrower.ogg-abc57c0e6ac72f9321d251a83df09dc3.oggstr"
+
+[deps]
+
+source_file="res://resources/players/wizard/flamethrower.ogg"
+dest_files=[ "res://.import/flamethrower.ogg-abc57c0e6ac72f9321d251a83df09dc3.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

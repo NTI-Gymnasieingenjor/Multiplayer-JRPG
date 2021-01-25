@@ -1,7 +1,6 @@
-extends Position2D
+extends Node2D
 
-var is_enemy = false
-var attack = "archermelee"
+var attack
 
 
 func _ready():
@@ -15,7 +14,7 @@ func play_turn():
 	dynamic_audio.add_child(player)
 	
 #	Loads attack sound effect.
-	player.stream = load("res://resources/characters/archer/" + attack + ".ogg")
+	player.stream = load(self.get_filename().replace(self.get_name().to_lower() + ".tscn", attack + ".ogg"))
 	
 #	Plays attack animation and sound.
 	$AnimatedSprite.play("Attack")
