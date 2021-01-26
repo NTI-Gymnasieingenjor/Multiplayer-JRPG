@@ -17,10 +17,12 @@ func take_damage():
 func timed_button():
 	$AnimatedSprite.play("Idle")
 	
+#	Creates new TimedButton instance and sets it's position appropriately.
 	button = TimedButton.instance()
+	button.rect_position.x += 25
 	self.add_child(button)
 	
-	yield(button.get_node("Button"), "button_down")
+	yield(button, "button_down")
 	
 	button.queue_free()
 	emit_signal("successful_timing")

@@ -28,7 +28,7 @@ script = ExtResource( 5 )
 position = Vector2( 80, 76 )
 
 [node name="Archer" parent="TurnQueue" instance=ExtResource( 1 )]
-position = Vector2( 90, 129 )
+position = Vector2( 91.1237, 121.134 )
 
 [node name="Knight" parent="TurnQueue" instance=ExtResource( 7 )]
 position = Vector2( 230, 85 )

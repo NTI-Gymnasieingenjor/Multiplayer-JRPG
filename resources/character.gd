@@ -65,6 +65,7 @@ func play_turn():
 	move(enemy.position, 50)
 	yield(self, "in_position")
 	
+#	Spawns a timed attack button and waits for it to be pressed.
 	self.timed_button()
 	if not is_enemy:
 		yield(self, "successful_timing")
