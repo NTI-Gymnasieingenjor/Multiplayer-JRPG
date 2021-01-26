@@ -44,6 +44,10 @@ func move(pos : Vector2, spc : int):
 	is_moving = true
 
 
+func timed_button():
+	pass
+
+
 func play_turn():
 #	Creates new AudioStreamPlayer instance.
 	var dynamic_audio = get_tree().get_root().find_node("DynamicAudio", true, false)
@@ -60,6 +64,10 @@ func play_turn():
 #	Moves up to enemy.
 	move(enemy.position, 50)
 	yield(self, "in_position")
+	
+	self.timed_button()
+	if not is_enemy:
+		yield(self, "successful_timing")
 	
 #	Plays attack animation and sound.
 	$AnimatedSprite.play("Attack")
