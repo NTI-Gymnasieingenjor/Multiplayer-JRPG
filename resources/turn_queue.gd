@@ -4,6 +4,8 @@ class_name TurnQueue
 
 var active_character
 
+var victory = false
+
 
 func _ready():
 	active_character = get_child(0)
@@ -14,7 +16,7 @@ func battle_loop():
 	var battleui = get_tree().get_root().find_node("BattleUI", true, false)
 	
 #	Shows BattleUI if active character is a player character.
-	while true:
+	while victory == false:
 		match active_character.get("is_enemy"):
 			true:
 				pass
