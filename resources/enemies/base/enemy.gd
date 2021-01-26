@@ -57,15 +57,13 @@ func take_damage():
 
 
 func die():
-#	If this characters turn is coming up, skip that turn.
-	if self == get_parent().return_next_turn():
-		get_parent().next_turn()
 	queue_free()
-	
 	win()
 
 
 func win():
+	get_parent().victory = true
+	
 #	Remove BattleUI and show victory screen.
 	get_tree().root.get_node("Node2D").get_node("BattleUI").queue_free()
 	get_tree().root.get_node("Node2D").get_node("WinState").show()
