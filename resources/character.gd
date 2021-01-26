@@ -31,7 +31,7 @@ func _physics_process(delta):
 		emit_signal("in_position")
 
 
-func move(pos, spc):
+func move(pos : Vector2, spc : int):
 	target = pos
 	space = spc
 	
@@ -45,10 +45,6 @@ func move(pos, spc):
 
 
 func play_turn():
-	move(enemy.position, 50)
-
-	yield(self, "in_position")
-	
 #	Creates new AudioStreamPlayer instance.
 	var dynamic_audio = get_tree().get_root().find_node("DynamicAudio", true, false)
 	var player = AudioStreamPlayer.new()
@@ -57,26 +53,37 @@ func play_turn():
 #	Loads attack sound effect.
 	player.stream = load(self.get_filename().replace(self.get_name().to_lower() + ".tscn", attack + ".ogg"))
 	
+	
+#	Draws character on top of others during turn.
+	self.z_index += 1
+	
+#	Moves up to enemy.
+	move(enemy.position, 50)
+	yield(self, "in_position")
+	
 #	Plays attack animation and sound.
 	$AnimatedSprite.play("Attack")
 	player.play()
-	
 	yield(get_node("AnimatedSprite"), "animation_finished")
-	
-#	Stops sound effect and returns to idle animation.
 	player.stop()
 	
-	self.scale.x = -self.scale.x
+#	Deals damage to enemy.
+	enemy.take_damage()
 	
+#	Flips sprite and returns to original position.
+	$AnimatedSprite.set_flip_h(true)
 	move(original_position, 0)
 	yield(self, "in_position")
 	
-	self.scale.x = -self.scale.x
-	
+#	Flips sprite back and plays idle animation.
+	$AnimatedSprite.set_flip_h(false)
 	$AnimatedSprite.play("Idle")
 	
-	player.queue_free()
+#	Returns z index to original value.
+	self.z_index -= 1
 	
-	enemy.take_damage()
+	
+#	Removes AudioStreamPlayer instance from memory.
+	player.queue_free()
 	
 	emit_signal("turn_finished")
