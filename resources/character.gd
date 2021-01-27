@@ -17,6 +17,8 @@ export var speed : int = 200
 
 var space : int
 
+var timing : String = "hit"
+
 
 func _ready():
 	original_position = position
@@ -66,18 +68,19 @@ func play_turn():
 	yield(self, "in_position")
 	
 #	Spawns a timed attack button and waits for it to be pressed.
-	self.timed_button()
 	if not is_enemy:
-		yield(self, "successful_timing")
+		self.timed_button()
+		yield(self, "button_pressed")
 	
-#	Plays attack animation and sound.
-	$AnimatedSprite.play("Attack")
-	player.play()
-	yield(get_node("AnimatedSprite"), "animation_finished")
-	player.stop()
-	
-#	Deals damage to enemy.
-	enemy.take_damage()
+	if timing == "hit":
+	#	Plays attack animation and sound.
+		$AnimatedSprite.play("Attack")
+		player.play()
+		yield(get_node("AnimatedSprite"), "animation_finished")
+		player.stop()
+		
+	#	Deals damage to enemy.
+		enemy.take_damage()
 	
 #	Flips sprite and returns to original position.
 	$AnimatedSprite.set_flip_h(true)
