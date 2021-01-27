@@ -2,7 +2,7 @@ extends "res://resources/character.gd"
 
 signal successful_timing
 
-const TimedButton = preload("res://resources/ui/timedbutton/timedbutton.tscn")
+const TimedButton = preload("res://resources/ui/timed_button/timed_button.tscn")
 var button
 
 
