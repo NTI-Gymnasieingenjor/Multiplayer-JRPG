@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WizardDeath.png-e96b899f3be922a29050ad2ca4cdd7e7.stex"
+path="res://.import/wizard_death.png-04794685f2edeed286da74bd30ea110f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/players/wizard/WizardDeath.png"
-dest_files=[ "res://.import/WizardDeath.png-e96b899f3be922a29050ad2ca4cdd7e7.stex" ]
+source_file="res://resources/players/wizard/wizard_death.png"
+dest_files=[ "res://.import/wizard_death.png-04794685f2edeed286da74bd30ea110f.stex" ]
 
 [params]
 

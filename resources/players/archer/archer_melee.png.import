@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Knight-Idle-Sheet.png-4acdbf8f3adb1ae31f00af61ab5e35f6.stex"
+path="res://.import/archer_melee.png-e771da10c3ab10d6f81f718586e86c91.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/enemies/knight/Knight-Idle-Sheet.png"
-dest_files=[ "res://.import/Knight-Idle-Sheet.png-4acdbf8f3adb1ae31f00af61ab5e35f6.stex" ]
+source_file="res://resources/players/archer/archer_melee.png"
+dest_files=[ "res://.import/archer_melee.png-e771da10c3ab10d6f81f718586e86c91.stex" ]
 
 [params]
 

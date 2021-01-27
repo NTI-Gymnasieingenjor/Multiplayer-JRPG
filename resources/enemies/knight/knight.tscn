@@ -1,10 +1,13 @@
 [gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://resources/enemies/knight/knight.gd" type="Script" id=1]
-[ext_resource path="res://resources/enemies/knight/Knight-Idle-Sheet.png" type="Texture" id=3]
-[ext_resource path="res://resources/enemies/knight/Knight-Attack-Sheet.png" type="Texture" id=4]
+[ext_resource path="res://resources/enemies/knight/knight_idle.png" type="Texture" id=3]
+[ext_resource path="res://resources/enemies/knight/knight_attack.png" type="Texture" id=4]
 [ext_resource path="res://resources/ui/lifebar/lifebar.tscn" type="PackedScene" id=5]
-[ext_resource path="res://resources/enemies/knight/Knight-Walk-Sheet.png" type="Texture" id=6]
+[ext_resource path="res://resources/enemies/knight/knight_walk.png" type="Texture" id=6]
+
+
+
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 4 )

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ArcherMelee.png-057bc56d8701e4116cabc9e2795346aa.stex"
+path="res://.import/flying_castle.png-423bd4037673286f6cca471ebb59f8df.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/players/archer/ArcherMelee.png"
-dest_files=[ "res://.import/ArcherMelee.png-057bc56d8701e4116cabc9e2795346aa.stex" ]
+source_file="res://resources/backgrounds/flying_castle.png"
+dest_files=[ "res://.import/flying_castle.png-423bd4037673286f6cca471ebb59f8df.stex" ]
 
 [params]
 

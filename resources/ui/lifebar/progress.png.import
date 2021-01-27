@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ArcherIdle.png-646b028a6008f3a41638f3b23d8519eb.stex"
+path="res://.import/progress.png-bcd939f7bc8d114ae7e65ab45fef5a91.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/players/archer/ArcherIdle.png"
-dest_files=[ "res://.import/ArcherIdle.png-646b028a6008f3a41638f3b23d8519eb.stex" ]
+source_file="res://resources/ui/lifebar/progress.png"
+dest_files=[ "res://.import/progress.png-bcd939f7bc8d114ae7e65ab45fef5a91.stex" ]
 
 [params]
 
