@@ -1,5 +1,7 @@
 # Multiplayer JRPG
 
+### [Download the latest release!](https://github.com/NTI-Gymnasieingenjor/Multiplayer-JRPG/releases)
+
 ## Definition of Done
 
 - All team members should **understand the code** and be capable to make changes to it.
