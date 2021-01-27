@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Over.png-21bae52e4278c3788cba3e4cf864c210.stex"
+path="res://.import/under.png-6504c13fea9c6d996087f635064b6a60.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/ui/lifebar/Over.png"
-dest_files=[ "res://.import/Over.png-21bae52e4278c3788cba3e4cf864c210.stex" ]
+source_file="res://resources/ui/lifebar/under.png"
+dest_files=[ "res://.import/under.png-6504c13fea9c6d996087f635064b6a60.stex" ]
 
 [params]
 

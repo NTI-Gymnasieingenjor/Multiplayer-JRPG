@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/simplebg.png-e4d8df39e371b9ab5c9b5e77efba4a5c.stex"
+path="res://.import/knight_walk.png-5bceaa2a76c2173f7897bf6df8deb3ac.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/backgrounds/simplebg.png"
-dest_files=[ "res://.import/simplebg.png-e4d8df39e371b9ab5c9b5e77efba4a5c.stex" ]
+source_file="res://resources/enemies/knight/knight_walk.png"
+dest_files=[ "res://.import/knight_walk.png-5bceaa2a76c2173f7897bf6df8deb3ac.stex" ]
 
 [params]
 

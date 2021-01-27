@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/flyingcastlebg.png-797b67d2da5188ba95cbdc62948a322e.stex"
+path="res://.import/archer_run.png-d4755ce4c8ee2d07c32ee47250942751.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/backgrounds/flyingcastlebg.png"
-dest_files=[ "res://.import/flyingcastlebg.png-797b67d2da5188ba95cbdc62948a322e.stex" ]
+source_file="res://resources/players/archer/archer_run.png"
+dest_files=[ "res://.import/archer_run.png-d4755ce4c8ee2d07c32ee47250942751.stex" ]
 
 [params]
 
