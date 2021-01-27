@@ -2,8 +2,7 @@ extends "res://resources/character.gd"
 
 signal button_pressed
 
-const TimedButton = preload("res://resources/ui/timed_button/timed_button.tscn")
-var button
+onready var timinguimanager = rootnode.get_node("TimingUIManager")
 
 
 func _ready():
@@ -15,26 +14,23 @@ func take_damage():
 
 
 func timed_button():
-	$AnimatedSprite.play("Idle")
+	timinguimanager.spawn_timed_button()
 	
-#	Creates new TimedButton instance and sets its position accordingly.
-	button = TimedButton.instance()
-	button.rect_position.x += 25
+	var button = timinguimanager.get_node("TimedButton")
 	var buttonsprite = button.get_node("AnimatedSprite")
-	self.add_child(button)
 	
 #	Plays button fade in animation.
 	buttonsprite.play("Approach")
 	yield(button, "button_down")
 	
-	if buttonsprite.frame == 1:
+	if buttonsprite.frame > 4:
 		buttonsprite.play("Hit")
 		timing = "hit"
 	else:
 		buttonsprite.play("Miss")
 		timing = "miss"
 		
-	yield(buttonsprite, "animation_finished")
-	
-	button.queue_free()
 	emit_signal("button_pressed")
+	
+	yield(buttonsprite, "animation_finished")
+	button.queue_free()

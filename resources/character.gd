@@ -3,6 +3,8 @@ extends Node2D
 signal in_position
 signal turn_finished
 
+onready var rootnode = get_tree().root.get_node("Node2D")
+
 var attack : String
 var is_enemy : bool
 var enemy
@@ -52,7 +54,7 @@ func timed_button():
 
 func play_turn():
 #	Creates new AudioStreamPlayer instance.
-	var dynamic_audio = get_tree().get_root().find_node("DynamicAudio", true, false)
+	var dynamic_audio = rootnode.get_node("DynamicAudio")
 	var player = AudioStreamPlayer.new()
 	dynamic_audio.add_child(player)
 	
@@ -69,6 +71,7 @@ func play_turn():
 	
 #	Spawns a timed attack button and waits for it to be pressed.
 	if not is_enemy:
+		$AnimatedSprite.play("Idle")
 		self.timed_button()
 		yield(self, "button_pressed")
 	
