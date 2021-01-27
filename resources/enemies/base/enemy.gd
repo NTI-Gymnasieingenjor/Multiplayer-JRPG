@@ -62,7 +62,9 @@ func die():
 
 
 func win():
+#	Draws characters below the victory screen.
 	get_parent().z_index -= 5
+	
 	get_parent().victory = true
 	
 #	Remove BattleUI and show victory screen.
