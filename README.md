@@ -1,5 +1,4 @@
 # Multiplayer JRPG
-
 ### [Download the latest release!](https://github.com/NTI-Gymnasieingenjor/Multiplayer-JRPG/releases)
 
 ## Definition of Done
