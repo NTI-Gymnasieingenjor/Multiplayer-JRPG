@@ -52,10 +52,6 @@ func move(pos : Vector2, spc : int):
 	is_moving = true
 
 
-func timed_button():
-	pass
-
-
 func play_turn():
 #	Creates new AudioStreamPlayer instance.
 	var dynamic_audio = rootnode.get_node("DynamicAudio")
