@@ -1,6 +1,6 @@
 extends Node2D
 
-signal button_pressed
+signal button_finished
 
 const TimedButton = preload("res://resources/ui/timed_button/timed_button.tscn")
 var button
@@ -36,7 +36,7 @@ func spawn_timed_button():
 	else:
 		button.miss()
 	
-	emit_signal("button_pressed")
+	emit_signal("button_finished")
 	
 	yield(buttonsprite, "animation_finished")
 	button.queue_free()

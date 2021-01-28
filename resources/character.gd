@@ -6,6 +6,8 @@ signal turn_finished
 onready var rootnode = get_tree().root.get_node("Node2D")
 onready var timinguimanager = rootnode.get_node("TimingUIManager")
 
+var rng = RandomNumberGenerator.new()
+
 var attack : String
 var is_enemy : bool
 var enemy
@@ -74,7 +76,7 @@ func play_turn():
 	if not is_enemy:
 		$AnimatedSprite.play("Idle")
 		timinguimanager.spawn_timed_button()
-		yield(timinguimanager, "button_pressed")
+		yield(timinguimanager, "button_finished")
 	
 	if timing == "hit":
 	#	Plays attack animation and sound.

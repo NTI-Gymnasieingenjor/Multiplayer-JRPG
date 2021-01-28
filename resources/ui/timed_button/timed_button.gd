@@ -2,28 +2,46 @@ extends TextureButton
 
 signal state_set
 
+const ApproachCircle = preload("res://resources/ui/approach_circle/approach_circle.tscn")
+var approach_circle
+
 var state : String = "miss"
 
 
 func _ready():
-#	Plays button fade in animation.
-	$AnimatedSprite.play("Approach")
+#	Fades in animation on button and approach circle
+	var tween = Tween.new()
+	add_child(tween)
+	tween.interpolate_property(self, "modulate:a", 0.0, 1.0, 0.2, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	tween.start()
+	
+#	Instances and positions approach circle.
+	approach_circle = ApproachCircle.instance()
+	approach_circle.position = $AnimatedSprite.position
+	add_child(approach_circle)
+	
+#	Plays default button animation.
+	$AnimatedSprite.play("default")
 	
 #	Misses if approach animation times out.
-	yield($AnimatedSprite, "animation_finished")
-	if $AnimatedSprite.animation == "Approach":
+	yield(approach_circle, "animation_finished")
+	if $AnimatedSprite.animation == "default":
 		state = "miss"
 		emit_signal("state_set")
+		approach_circle.queue_free()
 
 
 func _on_button_down():
 #	Hits if button is pressed on during specific frames of the approach animation.
-	if $AnimatedSprite.animation == "Approach" and $AnimatedSprite.frame >= 5 and $AnimatedSprite.frame <= 7:
-		state = "hit"
-	else:
-		state = "miss"
-	
-	emit_signal("state_set")
+	if approach_circle != null:
+		if approach_circle.frame >= 42 and approach_circle.frame <= 48:
+			state = "hit"
+		else:
+			state = "miss"
+			
+		emit_signal("state_set")
+		
+		approach_circle.queue_free()
 
 
 func hit():

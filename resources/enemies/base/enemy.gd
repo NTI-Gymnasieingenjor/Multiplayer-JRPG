@@ -10,8 +10,6 @@ var dmgmanager
 
 var hp : int
 
-var rng = RandomNumberGenerator.new()
-
 
 func _ready():
 	is_enemy = true
