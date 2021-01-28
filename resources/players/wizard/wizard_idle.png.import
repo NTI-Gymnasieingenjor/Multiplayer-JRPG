@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/flyingcastlebg.png-797b67d2da5188ba95cbdc62948a322e.stex"
+path="res://.import/wizard_idle.png-327455b738e85fe0bbcf8f68bf2bace5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/backgrounds/flyingcastlebg.png"
-dest_files=[ "res://.import/flyingcastlebg.png-797b67d2da5188ba95cbdc62948a322e.stex" ]
+source_file="res://resources/players/wizard/wizard_idle.png"
+dest_files=[ "res://.import/wizard_idle.png-327455b738e85fe0bbcf8f68bf2bace5.stex" ]
 
 [params]
 

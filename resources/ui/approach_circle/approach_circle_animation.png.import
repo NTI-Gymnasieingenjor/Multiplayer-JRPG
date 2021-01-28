@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ArcherMelee.png-057bc56d8701e4116cabc9e2795346aa.stex"
+path="res://.import/approach_circle_animation.png-0c6202632deb17590317110536d037ee.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/players/archer/ArcherMelee.png"
-dest_files=[ "res://.import/ArcherMelee.png-057bc56d8701e4116cabc9e2795346aa.stex" ]
+source_file="res://resources/ui/approach_circle/approach_circle_animation.png"
+dest_files=[ "res://.import/approach_circle_animation.png-0c6202632deb17590317110536d037ee.stex" ]
 
 [params]
 

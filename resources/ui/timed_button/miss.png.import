@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Knight-Attack-Sheet.png-18623fa3aec17336be489e291caedcbb.stex"
+path="res://.import/miss.png-05cc1435acc9cd6261d8ec44369d36fe.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/enemies/knight/Knight-Attack-Sheet.png"
-dest_files=[ "res://.import/Knight-Attack-Sheet.png-18623fa3aec17336be489e291caedcbb.stex" ]
+source_file="res://resources/ui/timed_button/miss.png"
+dest_files=[ "res://.import/miss.png-05cc1435acc9cd6261d8ec44369d36fe.stex" ]
 
 [params]
 

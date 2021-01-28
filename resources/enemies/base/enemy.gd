@@ -10,8 +10,6 @@ var dmgmanager
 
 var hp : int
 
-var rng = RandomNumberGenerator.new()
-
 
 func _ready():
 	is_enemy = true
@@ -32,7 +30,7 @@ func take_damage():
 	self.add_child(dmgmanager)
 	
 #	Defines current active character in turn queue and gets its attack.
-	var active_character = get_tree().root.get_node("Node2D").get_node("TurnQueue").get("active_character")
+	var active_character = rootnode.get_node("TurnQueue").get("active_character")
 	var attackname = active_character.get("attack")
 	
 #	Retrieves mindamage and maxdamage of attack from database. 
@@ -68,6 +66,6 @@ func win():
 	get_parent().victory = true
 	
 #	Remove BattleUI and show victory screen.
-	get_tree().root.get_node("Node2D").get_node("BattleUI").queue_free()
-	get_tree().root.get_node("Node2D").get_node("WinState").show()
+	rootnode.get_node("BattleUI").queue_free()
+	rootnode.get_node("WinState").show()
 

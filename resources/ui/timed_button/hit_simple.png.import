@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Under.png-cb4b4baad39bd84c60064f6d62a00195.stex"
+path="res://.import/hit_simple.png-1a3a31a98ed3772c02bcb327fbc05f7c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/ui/lifebar/Under.png"
-dest_files=[ "res://.import/Under.png-cb4b4baad39bd84c60064f6d62a00195.stex" ]
+source_file="res://resources/ui/timed_button/hit_simple.png"
+dest_files=[ "res://.import/hit_simple.png-1a3a31a98ed3772c02bcb327fbc05f7c.stex" ]
 
 [params]
 

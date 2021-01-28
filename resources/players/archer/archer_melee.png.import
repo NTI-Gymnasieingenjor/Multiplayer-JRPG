@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ArcherIdle.png-646b028a6008f3a41638f3b23d8519eb.stex"
+path="res://.import/archer_melee.png-e771da10c3ab10d6f81f718586e86c91.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/players/archer/ArcherIdle.png"
-dest_files=[ "res://.import/ArcherIdle.png-646b028a6008f3a41638f3b23d8519eb.stex" ]
+source_file="res://resources/players/archer/archer_melee.png"
+dest_files=[ "res://.import/archer_melee.png-e771da10c3ab10d6f81f718586e86c91.stex" ]
 
 [params]
 

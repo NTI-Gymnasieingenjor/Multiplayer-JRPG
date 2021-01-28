@@ -1,0 +1,90 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://resources/ui/timed_button/timed_button.gd" type="Script" id=1]
+[ext_resource path="res://resources/ui/timed_button/button.png" type="Texture" id=2]
+[ext_resource path="res://resources/ui/timed_button/hit.png" type="Texture" id=3]
+[ext_resource path="res://resources/ui/timed_button/miss.png" type="Texture" id=4]
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 27, 27 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 4 )
+region = Rect2( 27, 0, 27, 27 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 4 )
+region = Rect2( 54, 0, 27, 27 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 4 )
+region = Rect2( 81, 0, 27, 27 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 3 )
+region = Rect2( 54, 0, 27, 27 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 3 )
+region = Rect2( 81, 0, 27, 27 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 3 )
+region = Rect2( 108, 0, 27, 27 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 3 )
+region = Rect2( 135, 0, 27, 27 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 3 )
+region = Rect2( 162, 0, 27, 27 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 3 )
+region = Rect2( 189, 0, 27, 27 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 3 )
+region = Rect2( 216, 0, 27, 27 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 3 )
+region = Rect2( 243, 0, 27, 27 )
+
+[sub_resource type="SpriteFrames" id=26]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": false,
+"name": "default",
+"speed": 15.0
+}, {
+"frames": [ SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ) ],
+"loop": false,
+"name": "Miss",
+"speed": 15.0
+}, {
+"frames": [ SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
+"loop": false,
+"name": "Hit",
+"speed": 15.0
+} ]
+
+[node name="TimedButton" type="TextureButton"]
+margin_left = -7.0
+margin_top = -7.0
+margin_right = 8.0
+margin_bottom = 8.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 7, 7 )
+frames = SubResource( 26 )
+__meta__ = {
+"_edit_lock_": true
+}
+[connection signal="button_down" from="." to="." method="_on_button_down"]

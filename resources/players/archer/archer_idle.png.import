@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Knight-Walk-Sheet.png-1eaa0915bfebf1bb9583e007c5fa5474.stex"
+path="res://.import/archer_idle.png-cc10587d279c975b0e37d7cfc1bef058.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/enemies/knight/Knight-Walk-Sheet.png"
-dest_files=[ "res://.import/Knight-Walk-Sheet.png-1eaa0915bfebf1bb9583e007c5fa5474.stex" ]
+source_file="res://resources/players/archer/archer_idle.png"
+dest_files=[ "res://.import/archer_idle.png-cc10587d279c975b0e37d7cfc1bef058.stex" ]
 
 [params]
 

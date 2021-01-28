@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ArcherAttack.png-a699619bde1a440cbafdb20a75a46f3b.stex"
+path="res://.import/knight_idle.png-7573b4b57910276d06e48572e84f54c0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/players/archer/ArcherAttack.png"
-dest_files=[ "res://.import/ArcherAttack.png-a699619bde1a440cbafdb20a75a46f3b.stex" ]
+source_file="res://resources/enemies/knight/knight_idle.png"
+dest_files=[ "res://.import/knight_idle.png-7573b4b57910276d06e48572e84f54c0.stex" ]
 
 [params]
 

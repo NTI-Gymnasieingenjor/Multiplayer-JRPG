@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Knight-Idle-Sheet.png-4acdbf8f3adb1ae31f00af61ab5e35f6.stex"
+path="res://.import/wizard_attack.png-932dbdbf5443f5c68f6dffa3a276b591.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/enemies/knight/Knight-Idle-Sheet.png"
-dest_files=[ "res://.import/Knight-Idle-Sheet.png-4acdbf8f3adb1ae31f00af61ab5e35f6.stex" ]
+source_file="res://resources/players/wizard/wizard_attack.png"
+dest_files=[ "res://.import/wizard_attack.png-932dbdbf5443f5c68f6dffa3a276b591.stex" ]
 
 [params]
 

@@ -3,6 +3,11 @@ extends Node2D
 signal in_position
 signal turn_finished
 
+onready var rootnode = get_tree().root.get_node("Node2D")
+onready var timinguimanager = rootnode.get_node("TimingUIManager")
+
+var rng = RandomNumberGenerator.new()
+
 var attack : String
 var is_enemy : bool
 var enemy
@@ -17,6 +22,8 @@ export var speed : int = 200
 
 var space : int
 
+var timing : String = "hit"
+
 
 func _ready():
 	original_position = position
@@ -24,6 +31,7 @@ func _ready():
 
 
 func _physics_process(delta):
+#	If is_moving == true, moves character to the location of "target", leaving "space" amount of space between them.
 	if position.distance_to(target) > space and is_moving == true:
 		position += velocity * speed * delta
 	else:
@@ -44,13 +52,9 @@ func move(pos : Vector2, spc : int):
 	is_moving = true
 
 
-func timed_button():
-	pass
-
-
 func play_turn():
 #	Creates new AudioStreamPlayer instance.
-	var dynamic_audio = get_tree().get_root().find_node("DynamicAudio", true, false)
+	var dynamic_audio = rootnode.get_node("DynamicAudio")
 	var player = AudioStreamPlayer.new()
 	dynamic_audio.add_child(player)
 	
@@ -62,22 +66,24 @@ func play_turn():
 	self.z_index += 1
 	
 #	Moves up to enemy.
-	move(enemy.position, 50)
+	move(enemy.position, 40)
 	yield(self, "in_position")
 	
 #	Spawns a timed attack button and waits for it to be pressed.
-	self.timed_button()
 	if not is_enemy:
-		yield(self, "successful_timing")
+		$AnimatedSprite.play("Idle")
+		timinguimanager.spawn_timed_button()
+		yield(timinguimanager, "button_finished")
 	
-#	Plays attack animation and sound.
-	$AnimatedSprite.play("Attack")
-	player.play()
-	yield(get_node("AnimatedSprite"), "animation_finished")
-	player.stop()
-	
-#	Deals damage to enemy.
-	enemy.take_damage()
+	if timing == "hit":
+	#	Plays attack animation and sound.
+		$AnimatedSprite.play("Attack")
+		player.play()
+		yield(get_node("AnimatedSprite"), "animation_finished")
+		player.stop()
+		
+	#	Deals damage to enemy.
+		enemy.take_damage()
 	
 #	Flips sprite and returns to original position.
 	$AnimatedSprite.set_flip_h(true)
