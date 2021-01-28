@@ -7,12 +7,15 @@ var button
 var buttonsprite
 
 onready var rootnode = get_tree().root.get_node("Node2D")
-onready var active_character = rootnode.get_node("TurnQueue").active_character
+var active_character
 
 
 func spawn_timed_button():
-#	Creates new TimedButton instance and sets its position accordingly.
+	active_character = rootnode.get_node("TurnQueue").active_character
+	
+#	Creates new TimedButton instance.
 	button = TimedButton.instance()
+	buttonsprite = button.get_node("AnimatedSprite")
 	
 #	Positions button on top of active character.
 	button.rect_position = active_character.enemy.position
@@ -23,19 +26,15 @@ func spawn_timed_button():
 	
 	add_child(button)
 	
-	buttonsprite = button.get_node("AnimatedSprite")
+	yield(button, "state_set")
 	
-#	Plays button fade in animation.
-	buttonsprite.play("Approach")
-	yield(button, "button_down")
+	active_character.timing = button.state
 	
-	if buttonsprite.frame > 4:
-		buttonsprite.play("Hit")
-		active_character.timing = "hit"
+	if button.state == "hit":
+		button.hit()
 	else:
-		buttonsprite.play("Miss")
-		active_character.timing = "miss"
-		
+		button.miss()
+	
 	emit_signal("button_pressed")
 	
 	yield(buttonsprite, "animation_finished")
