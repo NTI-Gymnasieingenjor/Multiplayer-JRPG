@@ -20,9 +20,9 @@ func spawn_timed_button():
 #	Positions button on top of the enemy of the current active characters.
 	button.rect_position = active_character.enemy.position
 	
-#	Temporary hardcoded positioning of button.
+#	TEMPORARY HARDCODED POSITIONING OF BUTTON.
 	button.rect_position -= Vector2(7, 7)
-	button.rect_position.x -= 20
+	button.rect_position.x -= 18
 	
 	add_child(button)
 	

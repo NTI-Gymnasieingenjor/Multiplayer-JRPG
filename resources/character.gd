@@ -31,6 +31,7 @@ func _ready():
 
 
 func _physics_process(delta):
+#	If is_moving == true, moves character to the location of "target", leaving "space" amount of space between them.
 	if position.distance_to(target) > space and is_moving == true:
 		position += velocity * speed * delta
 	else:
@@ -69,7 +70,7 @@ func play_turn():
 	self.z_index += 1
 	
 #	Moves up to enemy.
-	move(enemy.position, 50)
+	move(enemy.position, 40)
 	yield(self, "in_position")
 	
 #	Spawns a timed attack button and waits for it to be pressed.

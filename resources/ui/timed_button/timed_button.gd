@@ -12,7 +12,7 @@ func _ready():
 #	Fades in animation on button and approach circle
 	var tween = Tween.new()
 	add_child(tween)
-	tween.interpolate_property(self, "modulate:a", 0.0, 1.0, 0.2, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+	tween.interpolate_property(self, "modulate:a", 0.0, 1.0, 0.3, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 	tween.start()
 	
 #	Instances and positions approach circle.
