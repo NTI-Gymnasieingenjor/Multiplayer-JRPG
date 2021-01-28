@@ -26,6 +26,7 @@ func spawn_timed_button():
 	
 	add_child(button)
 	
+#	Waits for button to return if its been missed or hit.
 	yield(button, "state_set")
 	
 	active_character.timing = button.state
