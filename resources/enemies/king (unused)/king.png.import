@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/king.png-654ea4c888f789e82d0d74f19100b6f5.stex"
+path="res://.import/king.png-b7a8ee84959720acd84921674950949b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/enemies/king/king.png"
-dest_files=[ "res://.import/king.png-654ea4c888f789e82d0d74f19100b6f5.stex" ]
+source_file="res://resources/enemies/king (unused)/king.png"
+dest_files=[ "res://.import/king.png-b7a8ee84959720acd84921674950949b.stex" ]
 
 [params]
 
