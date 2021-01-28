@@ -34,7 +34,7 @@ func _ready():
 
 func _on_button_down():
 #	Hits if button is pressed on during specific frames of the approach animation.
-	if approach_circle != null:
+	if approach_circle != null and $AnimatedSprite.animation == "default":
 		if approach_circle.frame >= 42 and approach_circle.frame <= 48:
 			state = "hit"
 		else:
