@@ -21,6 +21,7 @@ func _ready():
 	add_child(approach_circle)
 	
 #	Plays default button animation.
+	approach_circle.play("default")
 	$AnimatedSprite.play("default")
 	
 #	Misses if approach animation times out.
