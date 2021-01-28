@@ -17,7 +17,7 @@ func spawn_timed_button():
 	button = TimedButton.instance()
 	buttonsprite = button.get_node("AnimatedSprite")
 	
-#	Positions button on top of active character.
+#	Positions button on top of the enemy of the current active characters.
 	button.rect_position = active_character.enemy.position
 	
 #	Temporary hardcoded positioning of button.
