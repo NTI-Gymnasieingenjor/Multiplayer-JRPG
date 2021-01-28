@@ -4,6 +4,7 @@ signal in_position
 signal turn_finished
 
 onready var rootnode = get_tree().root.get_node("Node2D")
+onready var timinguimanager = rootnode.get_node("TimingUIManager")
 
 var attack : String
 var is_enemy : bool
@@ -72,8 +73,8 @@ func play_turn():
 #	Spawns a timed attack button and waits for it to be pressed.
 	if not is_enemy:
 		$AnimatedSprite.play("Idle")
-		self.timed_button()
-		yield(self, "button_pressed")
+		timinguimanager.spawn_timed_button()
+		yield(timinguimanager, "button_pressed")
 	
 	if timing == "hit":
 	#	Plays attack animation and sound.
